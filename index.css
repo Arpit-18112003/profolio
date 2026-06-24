@@ -1,0 +1,306 @@
+/* ==========================================================================
+   Base & Reset Styles
+   ========================================================================== */
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width/height */
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: radial-gradient(circle at 50% 50%, #ffffff 0%, #f5f7fa 100%); /* Studio lighting radial gradient */
+    color: #2d3748;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==========================================================================
+   Navigation Bar Styles
+   ========================================================================== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navlinks {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+}
+
+.navlinks li:hover {
+    cursor: pointer;
+    color: #22a514; /* Highlight color on hover */
+    scale: 1.2;     /* Micro-animation scale effect */
+    transition: all 0.2s ease;
+}
+
+.navlinks li:focus-visible {
+    outline: 2px solid #22a514;
+    outline-offset: 4px;
+}
+
+/* ==========================================================================
+   Logo Styles (< / AD >)
+   ========================================================================== */
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    scale: 1.2;
+}
+
+.logo-text {
+    color: #22a514;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.a {
+    color: #22a514;
+    scale: 1.6;
+}
+
+/* ==========================================================================
+   Main Hero Section Layout
+   ========================================================================== */
+.main {
+    height: calc(100vh - 13vh); /* Fill height subtracting navbar height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.hero-container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1); /* Modern ease-out animation on load */
+}
+
+/* ==========================================================================
+   Typography & Styling
+   ========================================================================== */
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 20px;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+}
+
+.hero-title .highlight {
+    /* Premium gradient background clip for Arpit Dhakad text using brand green (#22a514) */
+    background: linear-gradient(135deg, #080808 0%, #6b35ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.hero-subtitle {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #151516;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.2rem; /* Prevents container jump while text is deleting/typing */
+}
+
+#typing-text {
+    color: #050505; /* Accent color for typed words */
+    font-weight: 600;
+}
+
+.cursor {
+    display: inline-block;
+    color: #22a514;
+    margin-left: 4px;
+    animation: blink 0.8s infinite; /* Standard typing cursor blink cycle */
+}
+
+.hero-description {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: #6b7280;
+    max-width: 650px;
+    margin-bottom: 36px;
+    font-weight: 400;
+}
+
+/* ==========================================================================
+   Interactive Buttons (CTAs)
+   ========================================================================== */
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 9999px; /* Pill-shaped buttons */
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #22a514;
+    color: #ffffff;
+    border: 2px solid #22a514;
+    box-shadow: 0 4px 14px rgba(34, 165, 20, 0.25);
+}
+
+.btn-primary:hover {
+    background-color: #1a800f;
+    border-color: #1a800f;
+    transform: translateY(-2px); /* Slight lift animation */
+    box-shadow: 0 6px 20px rgba(34, 165, 20, 0.35);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #22a514;
+    border: 2px solid #22a514;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(34, 165, 20, 0.06);
+    transform: translateY(-2px); /* Slight lift animation */
+}
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* ==========================================================================
+   Responsive — Tablet (max 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+    /* Navbar: shrink padding and font */
+    .navbar {
+        padding: 14px 20px;
+    }
+
+    .navlinks {
+        gap: 14px;
+        font-size: 0.9rem;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    /* Hero section: reduce height to auto on small screens */
+    .main {
+        height: auto;
+        min-height: 90vh;
+        padding: 60px 20px 40px;
+    }
+
+    /* Hero title shrinks for tablets */
+    .hero-title {
+        font-size: 2.6rem;
+    }
+
+    /* Subtitle wraps cleanly */
+    .hero-subtitle {
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    /* Buttons stack and fill */
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        padding: 13px 24px;
+    }
+}
+
+/* ==========================================================================
+   Responsive — Mobile (max 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+
+    /* Navbar: stack logo and links or keep minimal */
+    .navbar {
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .navlinks {
+        gap: 10px;
+        font-size: 0.82rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        scale: 1;
+    }
+
+    /* Hero further reduced */
+    .hero-title {
+        font-size: 1.9rem;
+        letter-spacing: -0.02em;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+}

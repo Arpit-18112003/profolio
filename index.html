@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="projects.css">
+
+<body>
+    <div class='navbar'>
+        <div class='logo'>
+            <div class='logo-text'>&lt;&nbsp;</div>
+            <div class="a">/</div>AD<div class='logo-text'>&nbsp;&gt;</div>
+        </div>
+        <div>
+            <ul class='navlinks'>
+                <li data-scroll-target=".main" tabindex="0">Home</li>
+                <li data-scroll-target=".tools" tabindex="0">Tool &amp; Technologies</li>
+                <li data-scroll-target=".projects" tabindex="0">Projects</li>
+                <li data-scroll-target=".contact" tabindex="0">Contact</li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="main">
+        <div class="hero-container">
+            <h1 class="hero-title"><span id="typing-text"></span><span class="cursor">|</span></h1>
+            <h2 class="hero-subtitle">App Developer | web developer </h2>
+            <p class="hero-description">
+                Passionate about building innovative  webpages and app for better user experience and  real world usage .
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#resume" class="btn btn-secondary">Resume</a>
+            </div>
+        </div>
+    </div>
+    <div class="tools">   
+          <div class="tools-container">
+            <h1 class="tools-title">Dev Tools</h1>
+            <div class="tools-grid">
+
+                <!-- VS Code -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 100 100">
+                        <mask id="vscode-mask">
+                            <path fill="#fff" d="M70.9 3.3L37.2 34.2 15.7 18.1 5 23.7v52.6l10.7 5.6 21.9-16.1 33.9 30.9L95 89V11L70.9 3.3zm0 69.7L45.1 50l25.8-23V73z"/>
+                        </mask>
+                        <path fill="#007ACC" d="M95 11L70.9 3.3 37.2 34.2 15.7 18.1 5 23.7v52.6l10.7 5.6 21.9-16.1 33.9 30.9L95 89V11z"/>
+                        <path fill="#fff" fill-opacity="0.25" mask="url(#vscode-mask)" d="M70.9 3.3L37.2 34.2 15.7 18.1 5 23.7v52.6l10.7 5.6 21.9-16.1 33.9 30.9L95 89V11L70.9 3.3zm0 69.7L45.1 50l25.8-23V73z"/>
+                    </svg>
+                    <span class="skill-name">VS Code</span>
+                </div>
+
+                <!-- Git -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 128 128">
+                        <path fill="#F34F29" d="M124.7 58.4L69.6 3.3a11.2 11.2 0 00-15.8 0l-11 11 13.9 13.9a13.3 13.3 0 0116.8 16.9l13.4 13.4a13.3 13.3 0 11-8 7.6L66 53.2v34.1a13.3 13.3 0 11-10.9-.4V52.5A13.3 13.3 0 0148.5 36L35 22.3 3.3 54a11.2 11.2 0 000 15.8l55.1 55.1a11.2 11.2 0 0015.8 0l50.5-50.5a11.2 11.2 0 000-16z"/>
+                    </svg>
+                    <span class="skill-name">Git</span>
+                </div>
+
+                <!-- GitHub -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 100 100">
+                        <path fill="#24292f" d="M50 3.6C24.3 3.6 3.6 24.3 3.6 50c0 20.5 13.3 37.9 31.7 44.1 2.3.4 3.1-1 3.1-2.2 0-1.1 0-4-.1-7.8C26 86.4 23.4 78.2 23.4 78.2c-2.1-5.4-5.2-6.8-5.2-6.8-4.2-2.9.3-2.8.3-2.8 4.7.3 7.1 4.8 7.1 4.8 4.2 7.1 10.9 5.1 13.6 3.9.4-3 1.6-5.1 3-6.3-10.4-1.2-21.3-5.2-21.3-23.1 0-5.1 1.8-9.3 4.8-12.5-.5-1.2-2.1-5.9.5-12.3 0 0 3.9-1.3 12.9 4.8a44.9 44.9 0 0123.5 0c9-6 12.9-4.8 12.9-4.8 2.6 6.4 1 11.1.5 12.3 3 3.2 4.8 7.4 4.8 12.5 0 17.9-10.9 21.9-21.3 23.1 1.7 1.4 3.2 4.3 3.2 8.6 0 6.2-.1 11.2-.1 12.7 0 1.2.8 2.7 3.2 2.2C83.1 87.9 96.4 70.5 96.4 50 96.4 24.3 75.7 3.6 50 3.6z"/>
+                    </svg>
+                    <span class="skill-name">GitHub</span>
+                </div>
+
+                <!-- Docker -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 100 100">
+                        <path fill="#2496ED" d="M96.2 45.3c-1.8-1.2-5.9-1.7-9.1-1.1-.4-3-2.2-5.6-5.5-8l-1.9-1.2-1.2 1.9c-1.6 2.4-2.3 5.7-2.1 8.6a11 11 0 003.3 6.2c-1.6.9-4.2 1.4-6.1 1.4H4.1c-.6 7.3 2.3 16.7 7.8 23.1 5.3 6.1 13.2 9.2 23.4 9.2 22.2 0 38.7-10.2 46.5-28.7 3 .1 9.6.1 12.9-6 .2-.3 1.2-2.3 1.5-3l-0.3-.4zM55 45.3H44.6v10h10.4V45.3zm13.8 0H58.4v10h10.4V45.3zM41.2 45.3H30.8v10h10.4V45.3zm-13.8 0H17v10h10.4V45.3zm27.6-13.8H44.6v10h10.4V31.5zm13.8 0H58.4v10h10.4V31.5zm-27.6 0H30.8v10h10.4V31.5zM41.2 17.7H30.8v10h10.4V17.7z"/>
+                    </svg>
+                    <span class="skill-name">Docker</span>
+                </div>
+
+                <!-- Postman -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="46" fill="#FF6C37"/>
+                        <path fill="#fff" d="M67.9 30.8a24 24 0 10-12.8 43.9l-8.5-8.5a14.4 14.4 0 010-20.4l14.5-14.5a24 24 0 016.8-.5zm-3.4 3a14.4 14.4 0 01-8.9 24.8L70.1 44.1a24 24 0 01-5.6-10.3z"/>
+                        <path fill="#fff" d="M44.5 55.2l7.1-7.1 7.1 7.1-7.1 7.1z"/>
+                    </svg>
+                    <span class="skill-name">Postman</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="tech" style="align-items: center;>  
+            <div class="tools-container">
+            <h1 class="tools-title"> Technologies</h1>
+            <div class="tools-grid">
+                <!-- HTML5 -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 512 512">
+                        <path fill="#E34F26" d="M71,460 L30,0 L481,0 L440,460 L255,512 Z"/>
+                        <path fill="#EF652A" d="M256,472 L407,430 L440,61 L256,61 Z"/>
+                        <path fill="#EBEBEB" d="M256,176 L256,227 L332,227 L325,302 L256,321 L256,373 L339,350 L349,238 Z"/>
+                        <path fill="#EBEBEB" d="M256,124 L256,176 L343,176 L348,124 Z"/>
+                        <path fill="#FFFFFF" d="M256,176 L169,176 L164,124 L256,124 Z"/>
+                        <path fill="#FFFFFF" d="M256,227 L256,176 L174,176 L183,278 L256,298 L256,350 L173,327 L168,272 L219,272 Z"/>
+                    </svg>
+                    <span class="skill-name">HTML5</span>
+                </div>
+
+                <!-- CSS3 -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 512 512">
+                        <path fill="#1572B6" d="M71,460 L30,0 L481,0 L440,460 L255,512 Z"/>
+                        <path fill="#33A9DC" d="M256,472 L407,430 L440,61 L256,61 Z"/>
+                        <path fill="#EBEBEB" d="M256,227 L333,227 L326,303 L256,322 L256,374 L340,351 L350,239 Z"/>
+                        <path fill="#EBEBEB" d="M256,124 L256,176 L343,176 L348,124 Z"/>
+                        <path fill="#FFFFFF" d="M256,176 L169,176 L164,124 L256,124 Z"/>
+                        <path fill="#FFFFFF" d="M256,227 L256,176 L174,176 L183,278 L256,298 L256,350 L173,327 L168,272 L219,272 Z"/>
+                    </svg>
+                    <span class="skill-name">CSS3</span>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 630 630">
+                        <rect width="630" height="630" fill="#f7df1e" rx="40"/>
+                        <path d="m423.8 492.19c12.69 20.72 29.2 35.9 58.4 35.9 24.53 0 40.2-12.27 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 14.38 84.2 49.05l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.3 10.15-28.3 24.1 0 17 11 23.3 35.5 34l14.8 6.35c50.3 21.57 78.7 43.56 78.7 94.3 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.8-60.78zm-209.9-2.2c11 19 26.2 32.5 50.3 32.5 19 0 32-8.5 32-26.6v-211h56.2v213.9c0 49.5-30 76.5-84.1 76.5-49.9 0-78.2-23.7-93.5-55z" fill="#000000"/>
+                    </svg>
+                    <span class="skill-name">JavaScript</span>
+                </div>
+
+                <!-- TypeScript -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 100 100">
+                        <rect width="100" height="100" fill="#3178c6" rx="10"/>
+                        <text x="86" y="80" fill="#fff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" text-anchor="end">TS</text>
+                    </svg>
+                    <span class="skill-name">TypeScript</span>
+                </div>
+
+                <!-- React -->
+                <div class="skill-card">
+                    <svg viewBox="-11.5 -10.23174 23 20.46348">
+                        <circle cx="0" cy="0" r="2.05" fill="#61dafb"/>
+                        <g stroke="#61dafb" stroke-width="1" fill="none">
+                            <ellipse rx="11" ry="4.2"/>
+                            <ellipse rx="11" ry="4.2" transform="rotate(60)"/>
+                            <ellipse rx="11" ry="4.2" transform="rotate(120)"/>
+                        </g>
+                    </svg>
+                    <span class="skill-name">React</span>
+                </div>
+
+                <!-- React Native -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="18" y="6" width="28" height="52" rx="4" stroke="#61dafb"/>
+                        <line x1="28" y1="52" x2="36" y2="52" stroke="#61dafb" stroke-linecap="round"/>
+                        <g transform="translate(32, 28) scale(1.1)">
+                            <circle cx="0" cy="0" r="1.5" fill="#61dafb"/>
+                            <ellipse rx="8" ry="3" stroke="#61dafb" stroke-width="0.8"/>
+                            <ellipse rx="8" ry="3" stroke="#61dafb" stroke-width="0.8" transform="rotate(60)"/>
+                            <ellipse rx="8" ry="3" stroke="#61dafb" stroke-width="0.8" transform="rotate(120)"/>
+                        </g>
+                    </svg>
+                    <span class="skill-name">React Native</span>
+                </div>
+
+                <!-- MySQL -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 128 128">
+                        <path fill="#00758F" d="M123.6 57.6c-2.3-4.7-6.5-8.1-10.7-10.4-3.3-1.8-6.8-3.1-10.4-3.8-2.6-.5-5.2-.7-7.8-.5 1 .3 2 .8 3 1.3 3 1.7 5.7 3.8 7.9 6.4 1 .8 1.8 1.8 2.5 2.8 1.2 1.8 2.1 3.7 2.6 5.8.4 1.7.5 3.5.3 5.3-.2 1.8-.7 3.5-1.5 5-1.4 2.8-3.8 5-6.5 6.5-1.8 1-3.8 1.7-5.9 2-1.4.2-2.8.3-4.2.1 1.7 0 3.3-.4 4.9-1 2.3-.9 4.3-2.3 5.9-4.2 1.4-1.6 2.3-3.6 2.7-5.7.3-1.4.3-2.8.1-4.2-.1-1-.4-2-.8-2.9-.6-1.5-1.5-2.8-2.6-3.9-1.8-1.9-4.1-3.3-6.6-4.1-3.6-1.1-7.4-1.2-11.1-.5-3 .6-5.8 1.7-8.4 3.2-.8.5-1.6 1-2.4 1.6-1.7 1.3-3.2 2.9-4.5 4.6-2.5 3.3-4.3 7.1-5.4 11.2-1 3.8-1.4 7.7-1.1 11.6.2 3 .9 6 2.1 8.8.8 2 2 3.8 3.5 5.3 1.8 1.8 4 3.1 6.5 3.8 1.9.5 3.8.7 5.8.6.9 0 1.9-.1 2.8-.3 1.9-.4 3.8-1.2 5.5-2.2 2.8-1.7 5.1-4.1 6.6-7 1.2-2.3 1.8-4.9 1.9-7.5.1-2.6-.4-5.2-1.4-7.6-1.6-3.8-4.4-7-8-9.2-2.1-1.3-4.5-2.2-7-2.6-1.8-.3-3.6-.3-5.4-.1.8.3 1.6.7 2.3 1.2 1.8 1.3 3.3 3.1 4.2 5.2.7 1.6 1 3.3.9 5.1-.1 1.4-.5 2.8-1.2 4-1.2 2.2-3.2 3.8-5.6 4.6-1.6.5-3.3.6-5 .3-1-.2-2-.6-2.9-1.2-1.8-1.2-3.1-3-3.8-5.1-.6-1.8-.7-3.7-.4-5.6.3-1.9.9-3.7 1.9-5.4.9-1.5 2.1-2.8 3.4-3.9 1.4-1.1 3-2 4.7-2.6 2.6-.9 5.3-1.2 8.1-.9 1.4.2 2.8.6 4.1 1.2 2.5 1.2 4.6 3 6.1 5.3 1.2 1.8 1.9 3.9 2.1 6 .1 1.8-.2 3.6-.8 5.3-.8 2.2-2.2 4.1-4.1 5.5-1.9 1.4-4.2 2.2-6.6 2.4-1.8.1-3.6-.2-5.3-.8-1.2-.4-2.3-1-3.3-1.8-1.5-1.2-2.6-2.9-3.2-4.8-.4-1.3-.5-2.7-.3-4 .1-.9.4-1.8.8-2.6.5-1 1.2-1.9 2.1-2.6 1.4-1.1 3.1-1.8 4.9-2 1.4-.1 2.8.1 4.1.6.9.3 1.8.8 2.5 1.5.6.6 1.1 1.3 1.4 2.1.2.7.3 1.4.2 2.1-.1.7-.4 1.4-.8 2-.6.9-1.5 1.6-2.5 2-1 .4-2.1.5-3.2.3-.9-.2-1.7-.6-2.4-1.2.6.2 1.2.3 1.8.2.9-.1 1.7-.5 2.3-1.1.4-.4.7-.9.8-1.4.1-.7-.1-1.4-.5-2-.4-.6-1-1-1.7-1.2-.9-.2-1.8-.1-2.7.2-.9.3-1.7.9-2.3 1.7-.5.7-.8 1.5-.9 2.4 0 1.2.4 2.4 1.1 3.4.6.8 1.4 1.4 2.3 1.8.9.4 1.9.6 2.9.6 1.2 0 2.4-.3 3.5-.8 1.9-.9 3.4-2.5 4.3-4.5.7-1.5 1-3.1 1-4.8 0-1.7-.4-3.4-1.2-4.9-.7-1.3-1.8-2.4-3.1-3.2-1.7-1.1-3.7-1.7-5.8-1.8-2.1-.1-4.2.3-6.1 1.2-1.5.7-2.8 1.7-3.9 3-1 1.2-1.7 2.6-2.1 4.1-.4 1.5-.4 3.1-.1 4.6.3 1.5.9 3 1.7 4.3 1.1 1.7 2.6 3.1 4.4 4.1 1.8 1 3.8 1.6 5.9 1.7 2.1.1 4.2-.3 6.1-1.2c2.5-1.2 4.6-3.1 6-5.5 1.1-1.9 1.7-4 1.7-6.2v-1.1z"/>
+                        <path fill="#F29111" d="M30.7 78.4c1.1-1.7 2.1-3.5 3-5.3.5-1 .9-2 1.3-3.1 1.2-3.1 2-6.3 2.5-9.6.2-1.7.3-3.4.3-5.1.1-3.4-.3-6.8-1.2-10.1-.5-1.7-1.2-3.3-2-4.9-1.3-2.5-3.1-4.7-5.2-6.5-1.3-1.1-2.8-2.1-4.3-2.9-2.2-1.1-4.5-2-6.9-2.6-1.5-.4-3-.6-4.6-.7-2-.1-4 .1-6 .5-1.7.3-3.4.8-5 1.5-.8.3-1.6.7-2.3 1.2-1.2.8-2.3 1.7-3.3 2.7-.8.8-1.5 1.7-2.1 2.7.9-.5 1.8-1 2.8-1.3 1.8-.7 3.7-1.1 5.6-1.3 3.3-.3 6.7.1 9.9 1.1 3 1 5.8 2.6 8.3 4.7 1.9 1.6 3.5 3.5 4.8 5.6.8 1.3 1.5 2.7 2 4.1.8 2.2 1.3 4.5 1.6 6.8.2 1.6.3 3.2.2 4.8-.1 2.8-.7 5.6-1.7 8.2-.8 2-2 3.8-3.4 5.4-1 1.2-2.2 2.2-3.5 3.1-1.5 1-3.1 1.8-4.8 2.4-3.3 1.2-6.8 1.8-10.3 1.7.9.1 1.8.1 2.8 0 3.3-.2 6.6-.9 9.7-2.1 3-.1 5.9-1 8.6-2.4z"/>
+                    </svg>
+                    <span class="skill-name">MySQL</span>
+                </div>
+
+                <!-- MongoDB -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 128 128">
+                        <path fill="#47A248" d="M84.3 15.3c-2.4-4-5.2-7.5-8.2-10.4-1.2-1.2-2.5-2.3-3.7-3.3-.6-.5-1.1-.9-1.3-1.1-.3-.2-.5-.3-.7-.2-.2.1-.3.2-.3.4v26.7C60.3 27 50.8 30.6 44 38c-8.9 9.8-12.7 23.3-10 36.1 2.4 11.2 9.5 20.9 19.3 26.3v13.5c0 .3.1.5.3.6.2.1.4.1.6 0 .4-.2 1.4-.8 2.6-1.5.6-.4 1.3-.8 2.1-1.3.8-.5 1.7-1.1 2.5-1.7 1.8-1.2 3.8-2.6 5.8-4.2V125c0 .3.1.5.3.6.2.1.4.1.6 0 .1-.1.4-.3.9-.7.5-.4 1.1-1 1.8-1.7.7-.7 1.4-1.5 2.1-2.4 1.5-1.8 3-3.9 4.3-6.2 6.5-4 11.6-9.8 14.8-16.7 5.7-12 5.1-26.2-1.6-37.6-6.5-11-15.6-18.4-23.7-22V17.8c7.4 3.7 13.9 9.8 17.5 17.5.1.3.3.4.6.4s.5-.2.6-.4c2.2-4.6 4.3-8.8 6.1-12.8 1.1-2.4 2.1-4.7 2.8-6.8 0-.2-.1-.4-.2-.5-.2-.1-.5-.1-.7.1-2.8 2.8-5.3 5.4-7.4 7.8 0 0-4-10-12.5-17.8zM68.7 112V91.6c.7-.5 1.4-1 2.1-1.5 5.5-4 10.3-9.5 13.7-16 6-11.4 5.3-25.2-1.7-35.8C76 27.5 68.7 21 68.7 21v91zM65 3.3c-2.3 2.1-4.5 4.5-6.5 7.1-5.6 7.4-8 15.6-8 15.6 1.7-1.7 3.8-3.4 6-5 2.2-1.6 4.6-3.1 6.8-4.3.4-.2.6-.5.6-.9.2-4.1.5-8.2.9-12 .1-.3 0-.4-.1-.5 0 0-.4 0-.7.4z"/>
+                    </svg>
+                    <span class="skill-name">MongoDB</span>
+                </div>
+
+                <!-- Vite.js -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 410 404" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="tech-vite-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#41d1ff"/>
+                                <stop offset="100%" style="stop-color:#bd34fe"/>
+                            </linearGradient>
+                            <linearGradient id="tech-vite-grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#ff3e00"/>
+                                <stop offset="100%" style="stop-color:#ffd700"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M399.641 59.525l-183.998 329.02c-3.699 6.614-13.064 6.6-16.745-.026L10.459 59.499c-4.002-7.098 2.393-15.505 10.378-13.538l183.15 45.79a10.46 10.46 0 005.053 0l179.86-45.77c7.969-2.026 14.381 6.349 10.741 13.544z" fill="url(#tech-vite-grad1)"/>
+                        <path d="M292.965 1.524L156.801 28.94c-4.162.82-7.214 4.454-7.14 8.69l3.85 228.775a8.594 8.594 0 009.494 8.44l34.816-4.36c5.19-.65 9.354-4.937 9.443-10.17l8.282-133.317c.127-7.534 9.61-11.067 14.55-5.32l38.21 44.14c3.986 4.6 10.837 5.12 15.468 1.17l25.565-21.784c4.705-4.01 5.112-11.013 .9-15.53L298.53 109.285c-4.168-4.47-.788-11.66 5.26-11.46l27.207.87c6.123.194 11.01-4.89 10.663-11l-2.41-78.26c-.345-5.98-5.527-10.46-11.5-9.73l-34.785 1.82z" fill="url(#tech-vite-grad2)"/>
+                    </svg>
+                    <span class="skill-name">Vite.js</span>
+                </div>
+
+                <!-- Next.js -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 128 128">
+                        <circle cx="64" cy="64" r="62" fill="#000"/>
+                        <path d="M107.7 112.4L48.3 36H36v56h9.7V48.8l53.2 69.1c2.9-1.7 5.7-3.6 8.3-5.5H107z" fill="#fff"/>
+                        <rect x="82" y="36" width="10" height="56" fill="#fff"/>
+                    </svg>
+                    <span class="skill-name">Next.js</span>
+                </div>
+
+                <!-- Redux -->
+                <div class="skill-card">
+                    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#764abc" d="M88.7 43.4c.5-2.6.7-5.3.5-8-.5-8.4-4.5-13.5-11.1-15.1-3.4-.8-7-.5-10.2 1-1.5-1.7-3.3-3.1-5.4-4-5-2.2-10.4-1.5-14.8 1.7-2.8 2-4.8 4.8-5.7 8.1-2 .5-3.9 1.3-5.6 2.4-4.9 3.1-7.4 8.2-6.7 13.8.2 1.5.6 3 1.3 4.4-1.4 1.8-2.5 3.8-3.1 6-1.7 5.8.2 11.7 4.9 15.4 1.3 1 2.7 1.8 4.2 2.3-.3 2-.2 4 .3 5.9 1.3 5.3 5.3 9.2 10.6 10.4 1.5.3 3 .4 4.5.3 1.1 1.4 2.4 2.6 3.9 3.5 4.6 2.7 10 2.5 14.5-.3 2.6-1.7 4.6-4.1 5.7-7 1.9-.2 3.8-.7 5.5-1.5 4.9-2.3 8-7 8.2-12.4.1-1.5-.1-3.1-.5-4.6 1.2-1.5 2.2-3.2 2.8-5.1 1.6-5.6-.1-11.5-4.3-15.2zm-24.9 35.2c-3.1 0-5.6-2.5-5.6-5.6 0-.1 0-.2 0-.3l.1-.1 13.9-8.1.1.1c.5 1 .7 2 .7 3.1 0 5.9-4.1 10.9-9.2 10.9zm-20.4-12.8c-1.5-2.7-1-6.1.9-9.2l.1.1 13.9 8-.1.1c-1 .4-2 .6-3.1.6-4.5-.1-9-3.6-11.7-7.8v2.2zm-.6-22c1.4-2.5 3.8-4.1 6.5-4.1.6 0 1.2.1 1.8.2l-.1.1v16.1l-.1.1c-1-.4-1.9-1-2.7-1.7-3.7-3.1-6.7-7.3-5.4-10.7zm20.8-12.7c3.1 0 5.6 2.5 5.6 5.6 0 .1 0 .2 0 .3l-.1.1L55.2 45l-.1-.1c-.5-1-.7-2-.7-3.1-.1-5.9 4-10.7 9.2-10.7zm20.4 12.7c1.5 2.7 1 6.1-.9 9.2l-.1-.1-13.9-8 .1-.1c1-.4 2-.6 3.1-.6 4.5.1 9 3.6 11.7 7.6v-8zm.6 22c-1.4 2.5-3.8 4.1-6.5 4.1-.6 0-1.2-.1-1.8-.2l.1-.1V53.5l.1-.1c1 .4 1.9 1 2.7 1.7 3.8 3.1 6.8 7.4 5.4 10.7zm-10.6 3.6l-14-8.1.1-.1 14-8.1.1.1v16.1l-.2.1z"/>
+                    </svg>
+                    <span class="skill-name">Redux</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<div class="Projects projects" style="height: 80vh; padding-top: 80px;"> 
+     <h1 class="tools-title"> Projects </h1>
+    <section1 style="display: flex; justify-content: center; gap: 40px;">
+        <div class="project" id="project-1">
+            <div class="project-header">
+                <h2 class="project-title">Netflix Clone</h2>
+                <a href="https://github.com/Arpit-18112003/netlflix-clone" target="_blank" class="project-github" aria-label="View on GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="project-description">Netflix responsive landing page clone built with HTML and CSS. The project recreates the main Netflix home page layout with a hero section, feature sections, FAQ cards, and footer links.</p>
+            <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+            </div>
+        </div>
+        <div class="project" id="project-2">
+            <div class="project-header">
+                <h2 class="project-title">Todo Web App</h2>
+                <a href="https://github.com/Arpit-18112003/todolist" target="_blank" class="project-github" aria-label="View on GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="project-description">This is a simple todo task manager with data save on browser using local storage for persistent task tracking.</p>
+            <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+            </div>
+        </div>
+        <div class="project" id="project-3"></div>
+        
+    </section1>
+      </div  
+   
+
+
+ <!-- Contact Section -->
+ <section class="contact" id="contact">
+    <div class="contact-container">
+        <h1 class="contact-title">Get In Touch</h1>
+        <p class="contact-subtitle">Feel free to reach out — I'm always open to new opportunities and collaborations.</p>
+
+        <div class="contact-grid">
+
+            <!-- Phone -->
+            <a class="contact-card" href="tel:+919399896299">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#22a514" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.69A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">+91 9399896299</span>
+                </div>
+            </a>
+
+            <!-- Email 1 -->
+            <a class="contact-card" href="mailto:arpitdhakad.personal@gmail.com">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#22a514" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-label">Gmail</span>
+                    <span class="contact-value">arpitdhakad.personal@gmail.com</span>
+                </div>
+            </a>
+
+            <!-- Email 2 -->
+            <a class="contact-card" href="mailto:arptdhakad@outlook.in">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#22a514" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="M12 4v16M2 12h20"/>
+                    </svg>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-label">Outlook</span>
+                    <span class="contact-value">arptdhakad@outlook.in</span>
+                </div>
+            </a>
+
+            <!-- Instagram -->
+            <a class="contact-card" href="https://instagram.com" target="_blank">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#22a514" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="0.5" fill="#22a514"/>
+                    </svg>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-label">Instagram</span>
+                    <span class="contact-value">@arpit_dhakad</span>
+                </div>
+            </a>
+
+            <!-- GitHub -->
+            <a class="contact-card" href="https://github.com/Arpit-18112003" target="_blank">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#22a514" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                    </svg>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com/arpit</span>
+                </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a class="contact-card" href="https://www.linkedin.com/in/arpit-dhakad-029692413/" target="_blank">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#22a514" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">linkedin.com/in/arpit</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+ </section>
+ 
+
+<script src="script.js"></script>
+</body>
+
+

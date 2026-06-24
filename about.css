@@ -1,0 +1,346 @@
+/* ==========================================================================
+   Tools & Technologies Layout Styles
+   ========================================================================== */
+
+/* Main tools section container with a subtle green tint background (#22a514) */
+.tools {
+   
+    padding: 80px 24px;
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.tools-container {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* Centered section title with a green accent underline */
+.tools-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.tools-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #22a514; /* Accent color underline */
+    border-radius: 9999px;
+}
+
+/* Flex grid layout wrapping card items nicely on all screens */
+.tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Premium card styling for skill icons */
+.skill-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-sizing: border-box;
+}
+
+/* Card hover interactions (gentle lift, drop-shadow, and subtle border color tint) */
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px -3px rgba(34, 165, 20, 0.08), 0 4px 6px -2px rgba(34, 165, 20, 0.03);
+    border-color: rgba(60, 192, 46, 0.464);
+}
+
+/* SVG icons scaling & animation */
+.skill-card svg {
+    width: 52px;
+    height: 52px;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skill-card:hover svg {
+    transform: scale(1.1);
+}
+
+/* Skill label typography */
+.skill-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #4b5563;
+    letter-spacing: -0.01em;
+}
+
+/* ==========================================================================
+   Contact Section Styles
+   ========================================================================== */
+
+.contact {
+    padding: 80px 24px;
+    width: 100%;
+    background-color: rgba(34, 165, 20, 0.05); /* Matching green tint background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Section title matching the tools-title style */
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 14px;
+    position: relative;
+    letter-spacing: -0.02em;
+}
+
+.contact-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #22a514;
+    border-radius: 9999px;
+}
+
+.contact-subtitle {
+    font-size: 1.05rem;
+    color: #6b7280;
+    margin-bottom: 48px;
+    margin-top: 20px;
+    max-width: 520px;
+    line-height: 1.7;
+}
+
+/* Grid of contact cards — auto wrap, centered */
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Each contact card is a clickable link */
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 20px 24px;
+    min-width: 260px;
+    flex: 1 1 260px;
+    max-width: 360px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(34, 165, 20, 0.1);
+    border-color: rgba(34, 165, 20, 0.3);
+}
+
+/* Circular green icon container */
+.contact-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(34, 165, 20, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.contact-card:hover .contact-icon {
+    background-color: rgba(34, 165, 20, 0.18);
+}
+
+.contact-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    text-align: left;
+}
+
+.contact-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #22a514;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.contact-value {
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #374151;
+    word-break: break-all;
+}
+
+/* ==========================================================================
+   Responsive — Tablet (max 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+    /* Tools section: reduce padding */
+    .tools {
+        padding: 60px 16px;
+    }
+
+    .tools-title,
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    /* Skill cards: smaller on tablets */
+    .skill-card {
+        width: 120px;
+        height: 120px;
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .skill-card svg {
+        width: 42px;
+        height: 42px;
+    }
+
+    .skill-name {
+        font-size: 0.82rem;
+    }
+
+    /* Contact: reduce padding */
+    .contact {
+        padding: 60px 16px;
+    }
+
+    /* Contact cards: allow 2-column layout */
+    .contact-card {
+        min-width: 200px;
+        flex: 1 1 200px;
+        padding: 16px 18px;
+        gap: 12px;
+    }
+
+    .contact-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .contact-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* ==========================================================================
+   Responsive — Mobile (max 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+
+    /* Tools section: further reduce */
+    .tools {
+        padding: 48px 12px;
+    }
+
+    .tools-title,
+    .contact-title {
+        font-size: 1.7rem;
+    }
+
+    .tools-grid {
+        gap: 14px;
+    }
+
+    /* Skill cards: compact on mobile */
+    .skill-card {
+        width: 100px;
+        height: 100px;
+        padding: 14px;
+        border-radius: 12px;
+        gap: 10px;
+    }
+
+    .skill-card svg {
+        width: 34px;
+        height: 34px;
+    }
+
+    .skill-name {
+        font-size: 0.75rem;
+    }
+
+    /* Contact: single column, full-width cards */
+    .contact {
+        padding: 48px 12px;
+    }
+
+    .contact-grid {
+        gap: 12px;
+    }
+
+    .contact-card {
+        min-width: unset;
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 14px 16px;
+    }
+
+    .contact-subtitle {
+        font-size: 0.95rem;
+    }
+}
