@@ -66,3 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+let btn=document.querySelector(".btn-secondary");
+btn.addEventListener("click",function(){
+    window.open("resume.pdf");
+})

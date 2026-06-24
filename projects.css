@@ -1,60 +1,87 @@
+/* ==========================================================================
+   Projects Section Container
+   ========================================================================== */
+.Projects {
+    padding: 80px 24px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Clean white background matching tools */
+}
+
+.Projects section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Project Card Styling
+   ========================================================================== */
 .project {
-    height: 50vh;
-    width: 20vw;
-    min-width: 280px;
-    border: 2px solid #00ff00;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.15),
-        0 0 20px rgba(0, 255, 0, 0.08);
-    border-radius: 25px;
+    flex: 1 1 320px;
+    max-width: 380px;
+    min-height: 320px;
+    border: 2px solid rgba(34, 165, 20, 0.3); /* Premium green borders */
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
     padding: 28px 24px;
-    background: rgba(10, 10, 10, 0.6);
-    backdrop-filter: blur(12px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+    box-sizing: border-box;
 }
 
 .project:hover {
     transform: translateY(-6px);
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3),
-        0 0 30px rgba(0, 255, 0, 0.15),
-        0 8px 24px rgba(0, 0, 0, 0.4);
+    border-color: rgba(34, 165, 20, 0.8);
+    box-shadow: 0 12px 20px -3px rgba(34, 165, 20, 0.08), 0 4px 6px -2px rgba(34, 165, 20, 0.03);
 }
 
 .project-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 .project-title {
     font-size: 1.35rem;
     font-weight: 700;
-    color: #fff;
+    color: #111827;
     margin: 0;
-    letter-spacing: 0.3px;
+    letter-spacing: -0.01em;
 }
 
 .project-github {
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba(34, 165, 20, 0.6);
     transition: color 0.25s ease, transform 0.25s ease;
     display: flex;
     align-items: center;
 }
 
 .project-github:hover {
-    color: #00ff00;
+    color: #1a800f;
     transform: scale(1.15);
 }
 
 .project-description {
-    font-size: 0.88rem;
+    font-size: 0.92rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.7);
-    margin: 0 0 auto 0;
+    color: #4b5563;
+    margin: 0 0 24px 0;
     flex-grow: 1;
 }
 
@@ -62,17 +89,63 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-top: 20px;
+    margin-top: auto; /* Push tags to the bottom */
 }
 
 .project-tag {
     font-size: 0.72rem;
     font-weight: 600;
-    color: #00ff00;
-    border: 1px solid rgba(0, 255, 0, 0.3);
+    color: #22a514;
+    border: 1px solid rgba(34, 165, 20, 0.3);
     border-radius: 20px;
-    padding: 4px 14px;
-    letter-spacing: 0.5px;
+    padding: 4px 12px;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    background: rgba(0, 255, 0, 0.06);
+    background: rgba(34, 165, 20, 0.04);
+}
+
+/* ==========================================================================
+   Responsive Media Queries
+   ========================================================================== */
+@media (max-width: 768px) {
+    .Projects {
+        padding: 60px 16px;
+        min-height: auto;
+    }
+
+    .Projects section1 {
+        gap: 24px;
+    }
+
+    .project {
+        flex: 1 1 290px;
+        min-height: 300px;
+        padding: 24px 20px;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Projects {
+        padding: 48px 12px;
+    }
+
+    .Projects section1 {
+        gap: 16px;
+    }
+
+    .project {
+        flex: 1 1 100%;
+        max-width: 100%;
+        min-height: auto; /* Allow auto height on mobile so it doesn't overflow */
+        padding: 20px 16px;
+    }
+
+    .project-description {
+        font-size: 0.88rem;
+        margin-bottom: 16px;
+    }
 }
