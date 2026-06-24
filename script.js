@@ -46,7 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.querySelectorAll("[data-scroll-target]").forEach((navItem) => {
-        const scrollToSection = () => {
+        const scrollToSection = (event) => {
+            if (event) event.preventDefault();
             const target = document.querySelector(navItem.dataset.scrollTarget);
 
             if (target) {
@@ -69,5 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let btn=document.querySelector(".btn-secondary");
 btn.addEventListener("click",function(){
-    window.open("resume.pdf");
+    window.location.href = "resume.pdf";
+
+
 })
