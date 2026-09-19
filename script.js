@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let btn=document.querySelector(".btn-secondary");
 btn.addEventListener("click",function(){
-    window.location.href = "resume.pdf";
+    window.location.href = "./resume.pdf"
 
 
 })
